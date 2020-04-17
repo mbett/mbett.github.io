@@ -10,11 +10,19 @@
   </head>
   <body>
     <div class="main">
+      
+      <!---- ***Don't print the headers or the links to the next or previous. Move the help link down to the coding box.
+
       <p class="heading"><a class="heading" href="."><img src="img/favicon-96x96.png" width="32px" />&nbsp;<b>CodingJS</a></b></p>
       <p class="subheading">Solve programming problems in Javascript or TypeScript!</p>
 
-      <a class="links" id="previous" href="#">previous</a>&nbsp;~&nbsp;<a class="links" id="next" href="#">next</a>&nbsp;~&nbsp;<a href="jsref.html" class="links ajax-popup-link" id="jsref-link">JS Syntax Help</a><br>
+      <a class="links" id="previous" href="#">previous</a>&nbsp;~&nbsp;<a class="links" id="next" href="#">next</a>&nbsp;~&nbsp;
+      <a href="jsref.html" class="links ajax-popup-link" id="jsref-link">JS Syntax Help</a><br>
       <h3><p id="title"> </p> <b>--</b> <p id="name"> </p></h3>
+      
+
+       ---->
+
       <div class="probField">
         <p id="problem"></p>
       </div>
@@ -24,12 +32,17 @@
       </ul>
       <div class="floatBox">
         <div class = "solveArea">
+          <a href="jsref.html" class="links ajax-popup-link" id="jsref-link">JavaScript Syntax Help</a><br>
+          <textarea id="answer"></textarea><br>
           <button class="btn" id="solve">Solve</button> (ctrl-enter)<button class="btn" id="show" style="visibility: hidden;">Show Solution</button><br>
           <textarea id="answer"></textarea><br>
- <!-- ***** Do not allow save or open in the OLI course 
+
+          <!-- ***** Do not allow save or open in the OLI course 
           <button class="btn" id="save">Save</button><button class="btn" id="open">Open</button>
           <input type="file" id="fileInput" style="display:none;">
- -->
+ 
+           -->
+          
         </div>
 
         <!-- <div class = "solveArea">
