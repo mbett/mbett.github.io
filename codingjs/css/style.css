@@ -126,13 +126,14 @@ div.probField {
 
 .solveArea {
   padding-bottom: 20px;
+	font-size: 10px;
 }
 
 #answer {
   width: 600px;
 	height: 300px;
   border: 3px solid #CDC1C5;
-  font-size: 12px;
+  font-size: 20px;
   color: white;
   background-color: black;
 }
