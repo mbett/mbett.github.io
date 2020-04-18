@@ -2,7 +2,8 @@
 
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
-  font-family: monospace;
+  // font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   color: black;
   direction: ltr;
