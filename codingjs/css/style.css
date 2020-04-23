@@ -144,9 +144,9 @@ div.probField {
 }
 
 div#displayResults {
-  position: absolute;
+  position: relative;
   top: 200px;
-  margin-left: 575px;
+  margin-left: 50px;
   margin-right: 15px;
   padding-bottom: 6rem;
 }
