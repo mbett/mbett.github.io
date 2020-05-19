@@ -1,6 +1,7 @@
 let myFlashcards = [ {
     "question": "Madame Uppercut\'s age",
-    "answer": 39
+    "image" : "images/barn-owl-2550068__340.webp",
+    "answer": "Barn Owl";
     }, 
     {
      "question": "What is the capital of PA?",
@@ -20,7 +21,10 @@ function displayQuestion() {
      if (counter == myFlashcards.length)
          counter = 0;
      document.getElementById("myQuestion").innerHTML = myFlashcards[counter].question;
-     //document.getElementById("myAnswer").innerHTML = "";
+    // Replace the image if there is one.
+    if (myFlashcards[counter].image != NULL)
+        document.getElementById("myImage").src = myFlashcards[counter].image;
+ 
     questionAsked = true;
  }
 
