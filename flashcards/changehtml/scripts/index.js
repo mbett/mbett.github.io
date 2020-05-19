@@ -19,7 +19,7 @@ function displayQuestion() {
      if (counter == myFlashcards.length)
          counter = 0;
      document.getElementById("myQuestion").innerHTML = myFlashcards[counter].question + counter;
-     document.getElementById("myAnswer").innerHTML = "";
+     //document.getElementById("myAnswer").innerHTML = "";
  }
 
 function displayAnswer() {
