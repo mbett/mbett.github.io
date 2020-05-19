@@ -21,10 +21,13 @@ function displayQuestion() {
      if (counter == myFlashcards.length)
          counter = 0;
      document.getElementById("myQuestion").innerHTML = myFlashcards[counter].question;
+
     // Replace the image if there is one.
-   // ****hello *** if (myFlashcards[counter].image != NULL)
-    document.getElementById("myImage").src = myFlashcards[0].image;
- 
+    if (myFlashcards[counter].hasOwnProperty('image') == true)
+        document.getElementById("myImage").src = myFlashcards[counter].image;
+    else 
+        document.getElementById("myImage").src = '';
+
     questionAsked = true;
  }
 
