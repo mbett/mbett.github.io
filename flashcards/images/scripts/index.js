@@ -23,7 +23,7 @@ function displayQuestion() {
      document.getElementById("myQuestion").innerHTML = myFlashcards[counter].question;
     // Replace the image if there is one.
    // if (myFlashcards[counter].image != NULL)
-    //    document.getElementById("myImage").src = myFlashcards[0].image;
+    document.getElementById("myImage").src = myFlashcards[0].image;
  
     questionAsked = true;
  }
