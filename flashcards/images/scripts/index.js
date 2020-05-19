@@ -1,7 +1,7 @@
 let myFlashcards = [ {
     "question": "Madame Uppercut\'s age",
     "image" : "images/barn-owl-2550068__340.webp",
-    "answer": "Barn Owl";
+    "answer": "Barn Owl"
     }, 
     {
      "question": "What is the capital of PA?",
