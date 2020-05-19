@@ -13,9 +13,16 @@ let myFlashcards = [ {
      ];
     
     
- let counter = 0;
- while (counter < myFlashcards.length ) {
-     alert(myFlashcards[counter].question);
-     alert(myFlashcards[counter].answer);
+let counter = 0;
+
+function displayQuestion() {
+     if (counter == myFlashcards.length)
+         counter = 0;
+     document.getElementById("myQuestion").innerHTML = myFlashcards[counter].question;
+     document.getElementById("myAnswer").innerHTML = "";
+ }
+
+function displayAnswer() {
+     document.getElementById("myAnswer").innerHTML = myFlashcards[counter].answer;
      ++counter;
  }
