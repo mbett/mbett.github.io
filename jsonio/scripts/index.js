@@ -1,4 +1,20 @@
 
+//Sample data - to be deleted after this is working properly
+let myFlashcards = [ {
+    "question": "Madame Uppercut\'s age",
+    "answer": 39
+    }, 
+    {
+     "question": "What is the capital of PA?",
+     "answer": "Harrisburg"
+     },
+     {
+     "question": "17*4",
+     "answer": 68
+     }
+];
+    
+
 // From https://medium.com/@osiolabs/read-write-json-files-with-node-js-92d03cc82824
 
 const fs = require('fs');
@@ -22,8 +38,8 @@ function jsonReader(filePath, cb) {
     })
 }
 
-function jsonWriter(filePath, cb) {
-  fs.writeFile('./newCustomer.json', jsonString, err => {
+function jsonWriter(filePath, jsonString) {
+  fs.writeFile( filePath, jsonString, err => {
     if (err) {
         console.log('Error writing file', err)
     } else {
@@ -40,3 +56,10 @@ jsonReader('./customer.json', (err, customer) => {
     }
     console.log(customer.address); // => "Infinity Loop Drive"
 })
+
+
+
+// Tell stringify to indent the data with 2 spaces to make 
+// the output more human readable
+//
+jsonWriter( 'json.txt', JSON.stringify(myFlashcards, null, 2));
