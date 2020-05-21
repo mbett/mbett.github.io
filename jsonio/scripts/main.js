@@ -21,4 +21,4 @@ function download(content, fileName, contentType) {
     a.download = fileName;
     a.click();
 }
-download(myFlashcards, 'json.txt', 'text/plain');
+download(JSON.stringify(myFlashcards), 'json.txt', 'text/plain');
