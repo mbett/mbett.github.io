@@ -1,4 +1,17 @@
-
+let myFlashcards = [ {
+    "question": "Madame Uppercut\'s age",
+    "answer": 39
+    }, 
+    {
+     "question": "What is the capital of PA?",
+     "answer": "Harrisburg"
+     },
+     {
+     "question": "17*4",
+     "answer": 68
+     }
+     ];
+    
 
 
 function download(content, fileName, contentType) {
@@ -8,4 +21,4 @@ function download(content, fileName, contentType) {
     a.download = fileName;
     a.click();
 }
-download(jsonData, 'json.txt', 'text/plain');
+download(myFlashcards, 'json.txt', 'text/plain');
